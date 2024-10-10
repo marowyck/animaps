@@ -147,13 +147,16 @@ body.dark-mode i {
         background-color: #3C3D37;
     }
 
-    body.dark-mode .hero-text h1,
+    body.dark-mode .hero-text h1 {
+        color: #95bd8b;
+    }
+    
     body.dark-mode .hero-text p,
     body.dark-mode .hero-text span {
         color: #ECDFCC;
     }
 
     body.dark-mode .explore-more {
-        background: #697565;
+        background: #95bd8b;
     }
 }
