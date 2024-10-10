@@ -11,6 +11,7 @@
 
 body {
     background: #ffffff;
+    overflow-x: hidden;
 }
 
 a{
