@@ -1,0 +1,50 @@
+.footer {
+    margin: 10px -20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #5A7F75;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(90,127,117,1) 38%);
+    padding: 15px;
+    font-family: "Concert One", system-ui;
+}
+
+.footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+body.dark-mode .footer {
+    background: linear-gradient(0deg, #3C3D37 0%, #181C14 38%);
+    border-top: 1px solid #444;
+    color: #ECDFCC;
+}
+
+body.dark-mode .footer ul li {
+    color: #ECDFCC;
+}
+
+body.dark-mode .footer ul li a {
+    color: #697565;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+body.dark-mode .footer ul li a:hover {
+    color: #697565;
+}
+
+body.dark-mode .footer i {
+    color: #ECDFCC;
+}
+
+@media (max-width: 800px) {
+    body.dark-mode .footer {
+        padding: 10px;
+    }
+
+    body.dark-mode .footer ul li {
+        margin-left: 15px;
+    }
+}

@@ -1,0 +1,110 @@
+nav {
+    width: 100%;
+    background: #5A7F78;
+    color: #010300;
+    font-weight: bold;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    font-family: "Concert One", system-ui;
+}
+
+
+.logo {
+    width: 250px;
+    padding-left: 2%;
+}
+
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 20px;
+}
+
+
+.mm {
+    display: none;
+    font-size: 30px;
+}
+
+
+body.dark-mode nav {
+    background: #181C14; 
+    color: #ECDFCC; 
+}
+
+body.dark-mode nav ul li {
+    color: #ECDFCC; 
+}
+
+body.dark-mode .mm {
+    color: #181C14; 
+}
+
+
+@media (max-width: 1000px) {
+    .logo {
+        width: 140px;
+    }
+    nav ul li {
+        margin: 10px 15px;
+    }
+}
+
+@media (max-width: 840px) {
+    nav {
+        padding: 15px 0;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #5a7f78be;
+        z-index: -1;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px 40px;
+    }
+
+    .mm {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        color: #010300;
+    }
+
+    .hide-mobile-menu {
+        right: -200px;
+    }
+
+    body.dark-mode .mm {
+        color: #ECDFCC; 
+    }
+
+    
+}
+
+
+body.dark-mode nav ul {
+    background-color: #181c14ab;
+}
+
+body.dark-mode nav ul li {
+    color: #ECDFCC; 
+}
+

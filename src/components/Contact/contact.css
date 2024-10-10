@@ -1,0 +1,190 @@
+@import url("boxicons/css/boxicons.min.css");
+
+.contact-nheader {
+    margin: 120px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    display: flex;
+    max-width: 90%;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    color: #010300;
+}
+
+.contact-col h3 {
+    color: #5A7F78;
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-col p {
+    font-family: "Chewy", system-ui;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+}
+
+.contact-col ul {
+    list-style: none;
+}
+
+.contact-col ul li {
+    font-family: "Chewy", system-ui;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    background-color: #BBDEC6;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+    font-family: "Concert One", system-ui;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.btn-submit {
+    background: #BBDEC6;
+    padding: 10px 2rem;
+    outline: 2.5px solid #BBDEC6;
+    outline-offset: 3px;
+    border: 0;
+    color: #010300;
+    font-size: 1rem;
+    border-radius: 100rem;
+    transition: 0.4s;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Concert One", system-ui;
+    margin-top: 20px;
+}
+
+.btn-submit:hover {
+    background: #5A7F78;
+    outline: 2.5px solid #5A7F78;
+    cursor: pointer;
+}
+
+.contact form label {
+    font-family: "Concert One", system-ui;
+}
+
+h2 {
+    align-items: center;
+    text-align: center;
+    font-size: 80px;
+}
+
+span {
+    font-family: "Concert One", system-ui;
+}
+
+@media (max-width: 700px) {
+    .contact-nheader {
+        flex-direction: column;
+        margin: 40px 20px;
+    }
+
+    .contact {
+        display: block;
+        padding: 10px;
+    }
+
+    .contact form input, .contact form textarea {
+        margin: 0;
+    }
+
+    .btn-submit {
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .contact-col {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+body.dark-mode .contact-nheader {
+    color: #ECDFCC;
+}
+
+body.dark-mode .contact-col h3 {
+    color: #697565;
+}
+
+body.dark-mode .contact-col p,
+body.dark-mode .contact-col ul li {
+    color: #ECDFCC;
+}
+
+body.dark-mode .contact-col ul li a {
+    color: #697565;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+body.dark-mode .contact-col ul li a:hover {
+    color: #5A7F78;
+}
+
+body.dark-mode .contact form input,
+body.dark-mode .contact form textarea {
+    background-color: #697565;
+    color: #ECDFCC;
+    border-radius: 20px;
+    border: 1px solid #ECDFCC;
+}
+
+body.dark-mode .btn-submit {
+    background: #697565;
+    outline: 2.5px solid #697565;
+    color: #ECDFCC;
+    border-radius: 100rem;
+}
+
+body.dark-mode .btn-submit:hover {
+    background: #181C14;
+    outline: 2.5px solid #181C14;
+}
+
+::-webkit-input-placeholder {
+    color: #ECDFCC;
+}
+
+body.dark-mode h2 {
+    color: #697565;
+}
+
+body.dark-mode span {
+    color: #697565;
+}
+
+@media (max-width: 700px) {
+    body.dark-mode .contact-nheader {
+        background-color: #3C3D37;
+    }
+
+    body.dark-mode .contact form input,
+    body.dark-mode .contact form textarea {
+        background-color: #697565;
+        color: #ECDFCC;
+    }
+
+    body.dark-mode .contact form label {
+        color: #ECDFCC;
+    }
+}

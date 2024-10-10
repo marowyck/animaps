@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url("boxicons/css/boxicons.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.btn-access{
+    background: #F4F0E5;
+    padding: 10px 2rem;
+    outline: 2.5px solid #F4F0E5;
+    outline-offset: 3px;
+    border: 0;
+    color: #010300;
+    font-size: 1rem;
+    border-radius: 100rem;
+    transition: 0.4s;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Concert One", system-ui;
+}
+  
+.btn-access:hover {
+    background: #BBDEC6;
+    outline: 2.5px solid #BBDEC6;
+    cursor: pointer;
+}
+
+  
+.change {
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 34px;
+}
+
+.change input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.changer {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #73C0FC;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.changer:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  left: 2px;
+  bottom: 2px;
+  z-index: 2;
+  background-color: #e8e8e8;
+  transition: .4s;
+}
+
+.sun svg {
+  position: absolute;
+  top: 6px;
+  left: 36px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.moon svg {
+  fill: #73C0FC;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.sun svg {
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+ 
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.moon svg {
+  animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+ 
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.input:checked + .changer {
+  background-color: #183153;
+}
+
+.input:focus + .changer {
+  box-shadow: 0 0 1px #183153;
+}
+
+.input:checked + .changer:before {
+  transform: translateX(30px);
+}
+/* */
+
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .btn-access, .article, .btn-submit, .explore-more {
+        padding: 14px 22px;
+    }
+}
+
+.testimonials {
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+}
+
+.next-btn, .back-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 15px;
+    width: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.back-btn {
+    right: auto;
+    left: 0;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    width: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.slider ul li {
+    list-style: none;
+    width: 50%;
+    padding: 20px;
+}
+
+.slide {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 100px;
+    border-radius: 20px;
+    color: #010300;
+    line-height: 1.4;
+    font-family: "Chewy", system-ui;
+    letter-spacing: 0.9px;
+}
+
+.slide img{
+    width: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 4px solid #5a7578;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.user-info h3 {
+    color: #5a7f78;
+}
+
+h3 {
+    font-family: "Concert One", system-ui;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Chewy", system-ui;
+    color: #5a7f78;
+    align-items: center;
+    text-align: center;
+}
+
+.help-us {
+    font-size: 30px;
+}
+
+/* */
+
+@media (max-width: 800px){
+    .testimonials {
+        padding: 0 40px;
+    }
+
+    .next-btn, .back-btn {
+        padding: 10px;
+        width: 35px;
+    }
+
+    .testimonials ul li {
+        padding: 10px;
+    }
+
+    .slide{
+        padding: 10px;
+    }
+
+    .slide img {
+        width: 50px;
+        border: 3px solid #5a7578;
+    }
+}
+
+@media (max-width: 800px) {
+    .user-info{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .user-info h3 {
+        font-size: 13px;
+    }
+
+    .slider p {
+        font-size: 12px;
+    }
+}
