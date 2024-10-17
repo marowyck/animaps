@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
           <br />
           <ul>
             <li><i className='bx bxl-gmail'></i> marowyck@gmail.com</li>
-            <li><i className='bx bxs-phone'></i> +55 19 994001621</li>
+            <li><i className='bx bxs-phone'></i> +55 19 999999999</li>
             <li><i className='bx bxl-instagram'></i> @marowyck</li>
           </ul>
         </div>
